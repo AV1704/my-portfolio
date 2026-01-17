@@ -3,6 +3,20 @@ import Image from "next/image";
 
 const certificates = [
   {
+    title: "Introduction to Networking",
+    issuer: "Cisco",
+    date: "2023",
+    description: "Covers the fundamentals of networking, including protocols, devices, and basic network operations.",
+    image: "/certificates/Introduction-to-network.png",
+  },
+  {
+    title: "Switching, Routing, and Wireless Essentials",
+    issuer: "Cisco",
+    date: "2023",
+    description: "Covers the fundamentals of network switching, routing, and wireless technologies for modern enterprise networks",
+    image: "/certificates/switching-routing-and-wireless.png",
+  },
+  {
     title: "Cybersecurity Essentials",
     issuer: "Cisco",
     date: "2024",
@@ -24,25 +38,11 @@ const certificates = [
     image: "/certificates/enterprise-networking-security-automation.png",
   },
   {
-    title: "Introduction to Networking",
-    issuer: "Cisco",
-    date: "2023",
-    description: "Covers the fundamentals of networking, including protocols, devices, and basic network operations.",
-    image: "/certificates/Introduction-to-network.png",
-  },
-  {
     title: "Introduction to Cybersecurity",
     issuer: "Cisco",
     date: "2024",
     description: "Covers the fundamentals of cybersecurity, including threats, vulnerabilities, and basic security principles.",
     image: "/certificates/Introduction-tocybersecurity.png",
-  },
-  {
-    title: "Switching, Routing, and Wireless Essentials",
-    issuer: "Cisco",
-    date: "2023",
-    description: "Covers the fundamentals of network switching, routing, and wireless technologies for modern enterprise networks",
-    image: "/certificates/switching-routing-and-wireless.png",
   },
 ];
 

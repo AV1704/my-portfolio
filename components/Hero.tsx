@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 
 export default function Hero() {
-  const phrases = ["Hi, I’m Alfie 👋", "Web Developer", "I love Websites"];
+  const phrases = ["Hi, I’m Alfie 👋", "Web Developer", "I love Coding"];
   const [currentPhrase, setCurrentPhrase] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
