@@ -1,4 +1,4 @@
-"use client";
+"use client"; // Required for React hooks in App Router
 
 import { useState, useEffect } from "react";
 
@@ -16,13 +16,13 @@ export default function Hero() {
       if (!isDeleting) {
         setDisplayedText(fullText.slice(0, displayedText.length + 1));
         if (displayedText.length + 1 === fullText.length) {
-          setTimeout(() => setIsDeleting(true), 1000); // pause at full text
+          setTimeout(() => setIsDeleting(true), 1000); // pause at full phrase
         }
       } else {
         setDisplayedText(fullText.slice(0, displayedText.length - 1));
         if (displayedText.length - 1 === 0) {
           setIsDeleting(false);
-          setCurrentPhrase((prev) => (prev + 1) % phrases.length); // next phrase
+          setCurrentPhrase((prev) => (prev + 1) % phrases.length); // loop phrases
         }
       }
     }, speed);
@@ -58,6 +58,7 @@ export default function Hero() {
         </a>
       </div>
 
+      {/* Blinking cursor style */}
       <style jsx>{`
         .blinking-cursor {
           font-weight: 100;
@@ -67,8 +68,7 @@ export default function Hero() {
         }
 
         @keyframes blink {
-          from,
-          to {
+          0%, 100% {
             opacity: 0;
           }
           50% {
